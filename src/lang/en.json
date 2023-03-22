@@ -1,0 +1,75 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "jobs": "Jobs"
+  },
+  "home": {
+    "title": "You've found me I'm",
+    "desc": "Front-end/mobile developer",
+    "btn": "Look my jobs"
+  },
+  "about": {
+    "title": "Welcome to...",
+    "subtitle": "Nice to meet you!",
+    "desc": "Front-end/mobile developer",
+    "infos": {
+      "age": "28 yrs",
+      "experience": "Years experience...",
+      "desc": "Hello there! <br /> More than 5 years experience as Front-end developer: websites, responsiveness and mobile application. Intermedium English. <br /> <br /> I am very active, I like to meet new people, talk, exchange experiences and mainly be always studying and learning new technologies and improving myself personally and professionally."
+    },
+    "skills": {
+      "title": "My Skills"
+    },
+    "experiences": {
+      "title": "My experience",
+      "list": [
+        {
+          "yearStart": "2021",
+          "yearEnd": "Present",
+          "position": "Front-end/mobile Developer",
+          "company": "Sys10"
+        },
+        {
+          "yearStart": "2020",
+          "yearEnd": "2021",
+          "position": "Front-end/mobile Developer",
+          "company": "Studio 360"
+        },
+        {
+          "yearStart": "2018",
+          "yearEnd": "2020",
+          "position": "Front-end Developer",
+          "company": "Weecom"
+        }
+      ]
+    }
+  },
+  "jobs": {
+    "title": "Portfolio",
+    "subtitle": "Jobs",
+    "btn": "See Project",
+    "list": [
+      {
+        "title": "Planeta Água",
+        "desc": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+        "skills": {
+          "title": "Skills",
+          "list": ["HTML, CSS, JavaScript, ReactJS"]
+        },
+        "link": "",
+        "img": ""
+      },
+      {
+        "title": "Planeta Água",
+        "desc": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+        "skills": {
+          "title": "Skills",
+          "list": ["HTML, CSS, JavaScript, ReactJS"]
+        },
+        "link": "",
+        "img": ""
+      }
+    ]
+  }
+}

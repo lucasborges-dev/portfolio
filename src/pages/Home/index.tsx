@@ -1,5 +1,10 @@
 import React from 'react';
+import LangComp from '../../components/Lang';
 
 export default function HomePage() {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <LangComp />
+    </>
+  );
 }

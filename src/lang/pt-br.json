@@ -1,0 +1,75 @@
+{
+  "menu": {
+    "home": "Início",
+    "about": "Sobre",
+    "jobs": "Trabalhos"
+  },
+  "home": {
+    "title": "Você me encontrou, eu sou",
+    "desc": "Desenvolvedor front-end/mobile",
+    "btn": "Veja meus trabalhos"
+  },
+  "about": {
+    "title": "Bem vindo/a...",
+    "subtitle": "Prazer em conhecer você!",
+    "desc": "Desenvolvedor front-end/mobile",
+    "infos": {
+      "age": "28 anos",
+      "experience": "Anos de experiência...",
+      "desc": "Olá! <br /> Possuo mais de 5 anos de experiência como desenvolvedor Front-end: websites, responsividade e aplicações mobile. Possuo inglês intermediário. <br /> <br /> Sou muito ativo, gosto de conhecer novas pessoas, falar, trocar experiências e principalmente estar sempre estudando, aprendendo novas tecnologias e melhorando a mim mesmo tanto pessoalmente como profissionalmente."
+    },
+    "skills": {
+      "title": "Minhas habilidades"
+    },
+    "experiences": {
+      "title": "Minhas experiências",
+      "list": [
+        {
+          "yearStart": "2021",
+          "yearEnd": "Atualmente",
+          "position": "Desenvolvedor Front-end/mobile",
+          "company": "Sys10"
+        },
+        {
+          "yearStart": "2020",
+          "yearEnd": "2021",
+          "position": "Desenvolvedor Front-end/mobile",
+          "company": "Studio 360"
+        },
+        {
+          "yearStart": "2018",
+          "yearEnd": "2020",
+          "position": "Desenvolvedor Front-end",
+          "company": "Weecom"
+        }
+      ]
+    }
+  },
+  "jobs": {
+    "title": "Portfólio",
+    "subtitle": "Trabalhos",
+    "btn": "Ver Projeto",
+    "list": [
+      {
+        "title": "Planeta Água",
+        "desc": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+        "skills": {
+          "title": "Habilidades",
+          "list": ["HTML, CSS, JavaScript, ReactJS"]
+        },
+        "link": "",
+        "img": ""
+      },
+      {
+        "title": "Planeta Água",
+        "desc": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+        "skills": {
+          "title": "Habilidades",
+          "list": ["HTML, CSS, JavaScript, ReactJS"]
+        },
+        "link": "",
+        "img": ""
+      }
+    ]
+  }
+}
