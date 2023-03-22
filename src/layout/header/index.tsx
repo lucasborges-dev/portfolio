@@ -1,9 +1,8 @@
 import React from 'react';
-import { Container, Logo, Medias, MenuLink, Nav } from './style';
-import Github from '../../components/svg/Github';
-import Instagram from '../../components/svg/Instagram';
-import Linkedin from '../../components/svg/Linkedin';
+import { Container, Logo, MenuLink, Nav } from './style';
+
 import { useLang } from '../../context/lang';
+import MediasComp from '../../components/Medias';
 
 export default function Header() {
   const currentPage = window.location.pathname;
@@ -17,24 +16,24 @@ export default function Header() {
           <ul>
             <li>
               <MenuLink
-                href="/"
-                className={currentPage === '/' ? 'active' : ''}
+                to="/"
+                className={({ isActive }) => (isActive ? 'active' : '')}
               >
                 {dataContent.menu.home}
               </MenuLink>
             </li>
             <li>
               <MenuLink
-                href="/about"
-                className={currentPage === '/about' ? 'active' : ''}
+                to="/about"
+                className={({ isActive }) => (isActive ? 'active' : '')}
               >
                 {dataContent.menu.about}
               </MenuLink>
             </li>
             <li>
               <MenuLink
-                href="/jobs"
-                className={currentPage === '/jobs' ? 'active' : ''}
+                to="/jobs"
+                className={({ isActive }) => (isActive ? 'active' : '')}
               >
                 {dataContent.menu.jobs}
               </MenuLink>
@@ -42,23 +41,7 @@ export default function Header() {
           </ul>
         </Nav>
       )}
-      <Medias>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <Linkedin />
-          </a>
-        </li>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <Github />
-          </a>
-        </li>
-        <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            <Instagram />
-          </a>
-        </li>
-      </Medias>
+      <MediasComp direction="column" />
     </Container>
   );
 }
