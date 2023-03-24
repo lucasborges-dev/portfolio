@@ -28,4 +28,20 @@ export const Medias = styled.ul`
       background-color: ${({ theme }) => theme.colors.accent};
     }
   }
+
+  @media (max-width: 1700px) {
+    .row a {
+      margin-left: 16px;
+    }
+
+    a {
+      width: 34px;
+      height: 34px;
+
+      svg {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
 `;

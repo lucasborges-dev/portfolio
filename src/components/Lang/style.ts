@@ -23,6 +23,12 @@ export const Item = styled.li`
       display: none;
     }
   }
+
+  @media (max-width: 1700px) {
+    &:after {
+      font-size: 16px;
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -37,5 +43,9 @@ export const Button = styled.button`
   &:hover,
   &.active {
     color: ${({ theme }) => theme.colors.accent};
+  }
+
+  @media (max-width: 1700px) {
+    font-size: 16px;
   }
 `;

@@ -8,10 +8,19 @@ export const Container = styled.section`
   margin: 0 auto;
   align-items: center;
   overflow: hidden;
+  padding-left: 30px;
+
+  @media (max-width: 1700px) {
+    max-width: 1050px;
+  }
 `;
 
 export const Content = styled.div`
   width: 545px;
+
+  @media (max-width: 1700px) {
+    width: 460px;
+  }
 `;
 
 export const Call = styled.h3`
@@ -23,6 +32,11 @@ export const Call = styled.h3`
   span {
     font-weight: bold;
   }
+
+  @media (max-width: 1700px) {
+    font-size: 87px;
+    line-height: 76px;
+  }
 `;
 
 export const Subtitle = styled.h5`
@@ -31,6 +45,10 @@ export const Subtitle = styled.h5`
   margin-top: 30px;
   font-size: 32px;
   color: ${({ theme }) => theme.colors.third};
+
+  @media (max-width: 1700px) {
+    font-size: 27px;
+  }
 `;
 
 export const ImageBlock = styled.div`
@@ -49,6 +67,23 @@ export const ImageBlock = styled.div`
     left: -5px;
     z-index: -1;
   }
+
+  @media (max-width: 1700px) {
+    padding-right: 102px;
+
+    &:before {
+      width: 346px;
+      height: 473px;
+    }
+  }
+`;
+
+export const PhotoBlock = styled.div`
+  @media (max-width: 1700px) {
+    img {
+      max-width: 305px;
+    }
+  }
 `;
 
 export const Icons = styled.div`
@@ -59,6 +94,32 @@ export const Icons = styled.div`
 
 export const IconItem = styled.div`
   position: absolute;
+
+  @keyframes inOut {
+    0% {
+      opacity: 1;
+    }
+
+    25% {
+      opacity: 0.75;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    75% {
+      opacity: 0.75;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation: inOut 2s linear;
+  animation-iteration-count: infinite;
+  opacity: 1;
 
   &.book {
     top: 158px;
@@ -93,5 +154,46 @@ export const IconItem = styled.div`
   &.dots {
     bottom: -30px;
     right: 40px;
+  }
+
+  @media (max-width: 1700px) {
+    svg {
+      max-width: 85%;
+      height: auto;
+    }
+
+    &.book {
+      top: 106px;
+      left: -68px;
+    }
+
+    &.controller {
+      top: 34px;
+      right: 98px;
+    }
+
+    &.explore {
+      top: 170px;
+    }
+
+    &.headphone {
+      bottom: 106px;
+      right: 32px;
+    }
+
+    &.hiking {
+      bottom: 150px;
+      left: -145px;
+    }
+
+    &.laptop {
+      bottom: 25px;
+      left: -42px;
+    }
+
+    &.dots {
+      bottom: -26px;
+      right: 27px;
+    }
   }
 `;

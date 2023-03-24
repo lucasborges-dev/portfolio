@@ -14,6 +14,7 @@ import {
   IconItem,
   Icons,
   ImageBlock,
+  PhotoBlock,
   Subtitle,
 } from './style';
 import Photo from '../../assets/img/MeHome.png';
@@ -57,7 +58,9 @@ export default function HomePage() {
               <Dots />
             </IconItem>
           </Icons>
-          <img src={Photo} />
+          <PhotoBlock>
+            <img src={Photo} />
+          </PhotoBlock>
         </ImageBlock>
       </Container>
       <Footer />

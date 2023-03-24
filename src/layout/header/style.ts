@@ -3,17 +3,27 @@ import { NavLink } from 'react-router-dom';
 
 export const Container = styled.header`
   background-color: ${({ theme }) => theme.colors.second};
-  width: 15%;
-  max-width: 285px;
-  padding: 60px;
+  width: 285px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  height: 100vh;
+
+  @media (max-width: 1700px) {
+    width: 240px;
+  }
 `;
 
 export const Logo = styled.h1`
   color: ${({ theme }) => theme.colors.third};
   font-size: 30px;
   font-weight: bold;
+  font-family: 'IBM Plex Serif', serif;
+
+  @media (max-width: 1700px) {
+    font-size: 26px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -54,5 +64,9 @@ export const MenuLink = styled(NavLink)`
     &:before {
       width: 120%;
     }
+  }
+
+  @media (max-width: 1700px) {
+    font-size: 17px;
   }
 `;
